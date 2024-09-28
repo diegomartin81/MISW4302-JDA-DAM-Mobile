@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Auto layout, variables, and unit scale are not yet supported -->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +8,7 @@
     android:layout_height="744dp"
     android:layout_alignParentStart="true"
     android:layout_alignParentTop="true"
-    android:background="@drawable/backgroundMobile" >
+    android:background="@drawable/background_mobile" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,13 +21,13 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            app:srcCompat="@drawable/ttoLogo" />
+            app:srcCompat="@drawable/tto_logo" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/letsWorkOut" />
+            app:srcCompat="@drawable/lets_workout" />
 
         <TextView
             android:id="@+id/textView"
@@ -35,7 +35,7 @@
             android:layout_height="111dp"
             android:fontFamily="@font/roboto_bold"
             android:gravity="bottom"
-            android:text="TextView"
+            android:text="Iniciar Sesión"
             android:textAlignment="textStart"
             android:textSize="34sp"
             tools:text="Iniciar Sesión" />
@@ -63,6 +63,15 @@
             android:inputType="textPassword"
             android:text="Clave" />
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:text="Iniciar Sesión"
+            android:textColorLink="@color/black" />
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -70,19 +79,3 @@
         </FrameLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- drawable/image.xml -->
-<vector
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:aapt="http://schemas.android.com/aapt"
-android:width="375dp"
-android:height="744dp"
-android:viewportWidth="375"
-android:viewportHeight="744"
-    >
-<group>
-    <clip-path
-        android:pathData="M0 0H375V375H0V0Z"
-        />
-</group>
-</vector>
